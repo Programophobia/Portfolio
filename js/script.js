@@ -3,6 +3,9 @@
 
 var argButtonName, buttonTest, buttonScisor, buttonRock, buttonPaper;
 var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+var playerResult = 0;
+
+var compResult = 0;
 //buttonTest = document.getElementById('button-test');
 buttonScisor = document.getElementById('button-nozyce');
 buttonRock = document.getElementById('button-kamien')
@@ -48,21 +51,29 @@ function buttonClicked(argButtonName) {
     console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
     if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
       printMessage('Wygrywasz!');
+      playerResult = playerResult +1;
+      printMessage( 'player: ' + playerResult)
     }
       else if(argPlayerMove == 'nożyce' && argComputerMove == 'papier'){
           printMessage('Wygrywasz!');
+          playerResult = playerResult + 1;
+          printMessage( 'player: ' + playerResult)
       }
   
       else if(argPlayerMove == 'kamień' && argComputerMove == 'nożyce'){
           printMessage('Wygrywasz!');
+          playerResult = playerResult + 1;
+          printMessage( 'player: ' + playerResult)
       }
       else if (argComputerMove == argPlayerMove){
           printMessage('remis')
       }
      else {
       printMessage('Przegrywasz :(');
+      compResult = compResult + 1;
+      printMessage( 'comp: ' + compResult)
     }
-    printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+    printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove + compResult + playerResult);
   }
   
   playerMove = argButtonName;
