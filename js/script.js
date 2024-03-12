@@ -74,6 +74,7 @@ function buttonClicked(argButtonName) {
       printMessage( 'comp: ' + compResult)
     }
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove + compResult + playerResult);
+    printResult(playerResult + compResult)
   }
   
   playerMove = argButtonName;
@@ -90,7 +91,10 @@ function buttonClicked(argButtonName) {
   ///console.log('ruch komputera to: ' + computerMove);
   displayResult(playerMove, computerMove);
 
+ 
+
 }
+
 
 
 
