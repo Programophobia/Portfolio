@@ -48,3 +48,18 @@ else {
 }
 
 printMessage(computerMove + playerMove);
+
+
+//repetition
+
+var paid, price, change1, change2;
+
+function calculateChange(paid, price){
+return paid - price;
+}
+
+change1 = calculateChange(100, 70)
+printMessage(change1)
+
+let change3 = calculateChange(1333, 44)
+printMessage(change3)
