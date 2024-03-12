@@ -117,15 +117,15 @@ function displayResult(argPlayerMove, argComputerMove) {
 
 
 playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
-console.log('wybór ruchu gracza to: ' + playerInput);
+//console.log('wybór ruchu gracza to: ' + playerInput);
 
 playerMove = getMoveName(playerInput);
-console.log('ruch gracza to: ' + playerMove);
+//console.log('ruch gracza to: ' + playerMove);
 
 randomNumber = Math.floor(Math.random() * 3 + 1);
-console.log('wylosowana liczba to: ' + randomNumber);
+//console.log('wylosowana liczba to: ' + randomNumber);
 
 computerMove = getMoveName(randomNumber);
-console.log('ruch komputera to: ' + computerMove);
+///console.log('ruch komputera to: ' + computerMove);
 
 displayResult(playerMove, computerMove);
