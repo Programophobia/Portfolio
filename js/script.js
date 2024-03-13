@@ -90,10 +90,21 @@ function buttonClicked(argButtonName) {
   computerMove = getMoveName(randomNumber);
   ///console.log('ruch komputera to: ' + computerMove);
   displayResult(playerMove, computerMove);
-
- 
-
 }
+
+function count (a, b){
+  let sum = a - b;
+
+  if(sum < 0) {
+    let neww = -1;
+    return sum = sum * neww;
+  }
+  return sum;
+}
+
+
+
+printMessage(count(1, 6))
 
 
 
