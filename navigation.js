@@ -31,3 +31,9 @@ const links = document.querySelectorAll('.nav-list a');
 for(let link of links){
   link.addEventListener('click', titleClickHandler);
 }
+
+const btns = document.querySelectorAll('.btn-links a')
+
+for(let btn of btns){
+    btn.addEventListener('click', titleClickHandler);
+  }
