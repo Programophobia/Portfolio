@@ -5,7 +5,7 @@ function printAbout(msg) {
 
 }
 
-printAbout('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever')
+printAbout('Internet, online courses, books')
 
 function moreAbout(msg) {
     const paragraph = document.createElement('p');
@@ -13,7 +13,7 @@ function moreAbout(msg) {
     document.getElementById('box-show-1').appendChild(paragraph)
 }
 
-moreAbout('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever')
+moreAbout('01001100 01110101 01100010 01101001 00100000 01100110 01110010 01111001 01110100 01101011 01101001')
 
 
 function lastAbout (msg) {
@@ -23,4 +23,4 @@ function lastAbout (msg) {
     
 }
 
-lastAbout('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever')
+lastAbout('At a very beginning of the path')
