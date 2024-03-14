@@ -239,9 +239,12 @@ footer i {
      justify-content: space-evenly;
     } 
     
-    nav {
-        width: 100%;
-        height: 100%
+    .nav-list {
+       display: none;
+    }
+
+    .subtitle {
+        display: none;
     }
     
     .wrapper {
@@ -252,3 +255,15 @@ footer i {
     .navigation ul {
         font-size: 15px;
     }}
+
+    .navigation p {
+        display: none;
+    }
+
+    .row-1 {
+        width: 100%;
+    }
+
+   .card {
+        width: 100%;
+    }
