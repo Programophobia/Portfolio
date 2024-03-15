@@ -37,3 +37,43 @@ const btns = document.querySelectorAll('.btn-links a')
 for(let btn of btns){
     btn.addEventListener('click', titleClickHandler);
   }
+
+  function printAnna(msg) {
+    const anna = document.createElement('p');
+    anna.innerHTML = msg;
+    document.getElementById('anka').appendChild(anna);
+  }
+
+  printAnna('Anna Powąska');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
