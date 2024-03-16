@@ -22,8 +22,6 @@ function divtxt(id, txt, ms, wait = 0) {
       divtxt("descr", "JUST A BIT ABOUT BELOW", 100)))
     .then(() => divtxt("welcome", "Thank you for visiting!!", 50, 2000))
     
-
-
 function printAbout(msg) {
     const paragrapf = document.createElement('p');
     paragrapf.innerHTML = msg;
