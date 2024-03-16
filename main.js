@@ -1,12 +1,4 @@
 
-//const welcome = document.getElementById('welcome');
-//const welcText = 'HELLO!';
-
-//for (let i = 0; i < welcText.length; i++) {
-   // setTimeout(() => {
-  //      welcome.innerText += welcText[i];
- //   }, i * 100);
-//}
 
 function divtxt(id, txt, ms, wait = 0) {
     const div = document.getElementById(id);
@@ -27,11 +19,9 @@ function divtxt(id, txt, ms, wait = 0) {
   }
   divtxt("welcome", "It's nice to meet You", 100)
     .then(prevText => (console.log(prevText + ' is done.'),
-      divtxt("descr", "You can also chain this function with any number of consecutive actions."
-      +" Now: wait for 2 seconds ...", 100)))
-    .then(() => divtxt("welcome", "This promised-based approach REALLY lets you do it!! 👍🏻", 50, 2000))
-    .then(() => (console.log("ready?"),"Yes! I am REALLY DONE now! 😁"))
-    .then(console.log)
+      divtxt("descr", "JUST A BIT ABOUT BELOW", 100)))
+    .then(() => divtxt("welcome", "Thank you for visiting!!", 50, 2000))
+    
 
 
 function printAbout(msg) {
