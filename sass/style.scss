@@ -102,6 +102,29 @@ text-align: center;
     background-color: rgba(255, 255, 0, 0.46);
     color: white;
 }
+/*Portfolio*/
+
+.html, .body { height: 100%; }
+
+.body {
+    background: radial-gradient(circle, rgb(213, 194, 17), rgb(86, 74, 18) 50%, rgb(5, 5, 5));
+    position: relative;
+
+}
+
+.body:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background: radial-gradient(circle, transparent, black 25%, transparent);
+    animation: color 5s infinite ease-out alternate;
+    opacity: 0;
+}
+
+@keyframes color {
+    0% {  background: radial-gradient(circle, transparent, black 25%, transparent); }
+    100% { opacity: 1; }
+}
 
 /*Our services*/
 
@@ -135,6 +158,10 @@ text-align: center;
     text-align: center;
     font-size: 30px;
     line-height: 60px;
+}
+
+.header-three {
+    margin: 20px;
 }
 
 /*Portfolio*/
