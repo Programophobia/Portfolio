@@ -1,3 +1,39 @@
+
+//const welcome = document.getElementById('welcome');
+//const welcText = 'HELLO!';
+
+//for (let i = 0; i < welcText.length; i++) {
+   // setTimeout(() => {
+  //      welcome.innerText += welcText[i];
+ //   }, i * 100);
+//}
+
+function divtxt(id, txt, ms, wait = 0) {
+    const div = document.getElementById(id);
+    return new Promise((res, rej) => {
+      setTimeout(() => { // optional initial timeout, when wait>0
+        div.textContent = "";
+        const a = txt.split(""),
+          iv = setInterval(() => {
+            if (a.length)
+              div.textContent += a.shift();
+            else {
+              clearInterval(iv);
+              res(txt);
+            }
+          }, ms);
+      }, wait);
+    });
+  }
+  divtxt("welcome", "It's nice to meet You", 100)
+    .then(prevText => (console.log(prevText + ' is done.'),
+      divtxt("descr", "You can also chain this function with any number of consecutive actions."
+      +" Now: wait for 2 seconds ...", 100)))
+    .then(() => divtxt("welcome", "This promised-based approach REALLY lets you do it!! 👍🏻", 50, 2000))
+    .then(() => (console.log("ready?"),"Yes! I am REALLY DONE now! 😁"))
+    .then(console.log)
+
+
 function printAbout(msg) {
     const paragrapf = document.createElement('p');
     paragrapf.innerHTML = msg;
