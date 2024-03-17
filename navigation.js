@@ -23,15 +23,10 @@ function titleClickHandler(event){
 }
 
 const links = document.querySelectorAll('.nav-list a');
-const btns = document.querySelectorAll('.btn-links a')
 
 for(let link of links){
   link.addEventListener('click', titleClickHandler);
 }
-
-for(let btn of btns){
-    btn.addEventListener('click', titleClickHandler);
-  }
 
 function printAnna(msg) {
   const anna = document.createElement('p');
@@ -41,17 +36,52 @@ function printAnna(msg) {
 
 printAnna('Anna Powąska');
 
+const optArticleSelector = '.row-1',
+  optTitleSelector = '.titleLanguage',
+  optTitleListSelector = '.btn-links';
+
+function generateTitleLinks(){
+
+  const titleList = document.querySelector(optTitleListSelector);
+  titleList.innerHTML = ''
+  const articles = document.querySelectorAll(optArticleSelector)
+ 
+  for(let article of articles){
+
+    const articleId = article.getAttribute('id');
+    const articleTitle = article.querySelector(optTitleSelector).innerHTML;
+    const linkHTML = '<a class="btn btn-one" href="#' + articleId + '"><span>' + articleTitle + '</span></a><span class="space"> </span>';
+    console.log(linkHTML)
+    titleList.innerHTML = titleList.innerHTML + linkHTML;
+  }
+  const btns = document.querySelectorAll('.btn-links a')
+
+  for(let btn of btns){
+    btn.addEventListener('click', titleClickHandler);
+  }
+}
+
+generateTitleLinks();
+
+const rmvTitle = document.getElementById("titleLang")
+rmvTitle.style.display = "none"
+
+const rmvTitlee = document.getElementById("titleLang-2")
+rmvTitlee.style.display = "none"
+
+const rmvTitleee = document.getElementById("titleLang-3")
+rmvTitleee.style.display = "none"
+
+const rmvTitleeee = document.getElementById("titleLang-4")
+rmvTitleeee.style.display = "none"
 
 
+//function activeTabEvent(){
 
 
+//const activeTab = 
 
-
-
-
-
-
-
+//}
 
 
 
