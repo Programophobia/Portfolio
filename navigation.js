@@ -4,6 +4,11 @@ function titleClickHandler(event){
   event.preventDefault
   const clickedItem = this;
   const portfolioLinks = document.querySelectorAll('.list a.active');
+  const linksBlack = document.querySelectorAll('.list a');
+
+  for(let linkBlack of linksBlack){
+    linkBlack.style.backgroundColor = "black"
+  }
 
   for(let portfolioLink of portfolioLinks){
       portfolioLink.classList.remove('active')
@@ -76,12 +81,6 @@ const rmvTitleeee = document.getElementById("titleLang-4")
 rmvTitleeee.style.display = "none"
 
 
-//function activeTabEvent(){
-
-
-//const activeTab = 
-
-//}
 
 
 
