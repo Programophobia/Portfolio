@@ -68,30 +68,35 @@ function generateTitleLinks(){
 
 generateTitleLinks();
 
-const rmvTitle = document.getElementById("titleLang")
-rmvTitle.style.display = "none"
+const rmvTitle = document.getElementById("titleLang");
+rmvTitle.style.display = "none";
 
-const rmvTitlee = document.getElementById("titleLang-2")
-rmvTitlee.style.display = "none"
+const rmvTitlee = document.getElementById("titleLang-2");
+rmvTitlee.style.display = "none";
 
-const rmvTitleee = document.getElementById("titleLang-3")
-rmvTitleee.style.display = "none"
+const rmvTitleee = document.getElementById("titleLang-3");
+rmvTitleee.style.display = "none";
 
-const rmvTitleeee = document.getElementById("titleLang-4")
-rmvTitleeee.style.display = "none"
-
-
+const rmvTitleeee = document.getElementById("titleLang-4");
+rmvTitleeee.style.display = "none";
 
 
 
 
 
+function creatEl(msg) {
+  const paragraph = document.createElement('p');
+  paragraph.setAttribute("id", "article-5");
+  paragraph.setAttribute("class", "row-1");
+  paragraph.innerHTML = msg;
+  document.querySelector('.portfolio .container').appendChild(paragraph);
+  paragraph.style.fontSize = "25px";
+  paragraph.style.webkitTextStroke = "1px white";
+  paragraph.style.color = "black";
+  console.log(paragraph)
+}
 
-
-
-
-
-
+creatEl('annapowaska@op.pl')
 
 
 
