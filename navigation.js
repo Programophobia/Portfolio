@@ -96,7 +96,7 @@ function creatEl(msg) {
   console.log(paragraph)
 }
 
-creatEl('annapowaska@op.pl')
+creatEl('+48 881253349')
 
 
 
