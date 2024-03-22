@@ -50,4 +50,30 @@ function lastAbout (msg) {
 lastAbout('At a very beginning of the path')
 
 
+function generateAboutHeader(){
+
+    const allSectionsAbout = document.querySelectorAll('.box')
+    console.log(allSectionsAbout)
+      
+    for(let sectionAbout of allSectionsAbout){
+        
+        const aboutWrapper = sectionAbout.querySelector('.about-header-wrapper')
+        console.log(aboutWrapper)
+            
+        let html = ''
+          
+        let about = aboutWrapper.getAttribute('id')
+        console.log(about)
+        
+        const newHTML = '<h3 class="header-three shadow-lg p-3 mb-5 bg-body-tertiary rounded ">'+ about + '</h3>'
+        console.log(newHTML)
+            
+        html = newHTML + html;
+        
+        aboutWrapper.innerHTML = html  
+    }
+}
+generateAboutHeader()
+
+
 
