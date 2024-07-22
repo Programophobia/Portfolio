@@ -1,7 +1,7 @@
 'use strict';
 
 function titleClickHandler(event){
-  event.preventDefault
+  event.preventDefaul()t
   const clickedItem = this;
   const portfolioLinks = document.querySelectorAll('.list a.active');
   const linksBlack = document.querySelectorAll('.list a');
